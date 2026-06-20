@@ -1,123 +1,143 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>揚生青年｜在大學，不只是讀書</title>
-  <meta name="description" content="揚生青年是一個陪伴學生建立自律、學習、目標與成長的青年社群。透過 LOL 生命契約、課程活動與夥伴陪伴，把想變好的念頭變成真正的改變。" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YoungSun｜揚生青年翻轉自學小組</title>
+  <meta name="description" content="YoungSun 揚生青年翻轉自學小組，陪伴大學生建立目標、自律、學習與成長的青年社群。" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Poppins:wght@500;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="#home" aria-label="揚生青年首頁">
-      <span class="brand-mark">YS</span>
-      <span class="brand-text">揚生青年</span>
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="YoungSun 首頁">
+      <span class="brand-en">YoungSun</span>
+      <span class="brand-zh">揚生青年翻轉自學小組</span>
     </a>
     <button class="menu-toggle" aria-label="開啟選單">☰</button>
     <nav class="nav">
-      <a href="#home">首頁</a>
-      <a href="#about">關於揚生青年</a>
+      <a href="#about">關於揚生</a>
+      <a href="#compass">成長羅盤</a>
       <a href="#lol">LOL生命契約</a>
       <a href="#courses">課程活動</a>
-      <a class="nav-cta" href="#join">加入我們</a>
+      <a href="#join" class="nav-cta">加入我們</a>
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
     </nav>
   </header>
 
-  <main id="home">
+  <main>
     <section class="hero">
-      <div class="hero-overlay"></div>
-      <div class="hero-content">
-        <p class="eyebrow">Youth Growth Community</p>
-        <h1>在大學，<br>不只是讀書。</h1>
-        <p class="hero-subtitle">找到讓自己持續成長的環境，把想變好的念頭，變成真正的改變，與一群願意成長的人同行。</p>
+      <div class="hero-bg"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">YoungSun Learning Community</p>
+        <h1>在大學，<br />不只是讀書。</h1>
+        <p class="hero-subtitle">找到讓自己持續成長的環境，把想變好的念頭，變成真正的改變。</p>
         <div class="hero-actions">
-          <a class="btn primary" href="#about">了解揚生青年</a>
-          <a class="btn secondary" href="#courses">近期活動</a>
+          <a href="#compass" class="btn btn-primary">探索你的成長方向</a>
+          <a href="#about" class="btn btn-glass">了解揚生青年</a>
         </div>
       </div>
-      <div class="hero-card">
-        <span>Core Values</span>
-        <strong>自律・學習・成長・目標</strong>
-      </div>
+      <a class="scroll-down" href="#about">Scroll ↓</a>
     </section>
 
-    <section id="about" class="section about-section">
-      <div class="section-heading">
-        <p class="eyebrow">About Us</p>
+    <section class="section about" id="about">
+      <div class="section-heading reveal">
+        <p class="eyebrow">ABOUT YOUNGSUN</p>
         <h2>我們不是只辦活動，而是打造一個讓人變好的環境。</h2>
+        <p>揚生青年翻轉自學小組，陪伴大學生建立目標、自律習慣與學習方法，讓每一次想變好的念頭，都有方法、有夥伴、有行動。</p>
       </div>
-      <div class="about-grid">
-        <article>
-          <h3>一個有溫度的成長社群</h3>
-          <p>揚生青年陪伴學生建立自律習慣、翻轉學習、挑戰自我。這裡不只是參加課程，而是練習把目標寫下來、把計畫做出來、把行動持續下去。</p>
-        </article>
-        <article>
-          <h3>從想變好，到真的做到</h3>
-          <p>透過課程、LOL生命契約、自學小組與夥伴陪伴，讓大學生在學業、人際、社團與未來規劃中，慢慢找到自己的方向。</p>
-        </article>
+      <div class="value-grid">
+        <article class="value-card reveal"><span>🎯</span><h3>目標</h3><p>找到值得努力的方向，讓大學不只是被時間推著走。</p></article>
+        <article class="value-card reveal"><span>📚</span><h3>學習</h3><p>透過課程與自學小組，建立能持續升級自己的能力。</p></article>
+        <article class="value-card reveal"><span>⏰</span><h3>自律</h3><p>把計畫落實到每一天，練習穩定前進的節奏。</p></article>
+        <article class="value-card reveal"><span>🌱</span><h3>成長</h3><p>和願意變好的夥伴同行，成為比昨天更好的自己。</p></article>
       </div>
     </section>
 
-    <section class="section values-section">
-      <div class="value-card"><span>01</span><h3>目標</h3><p>知道自己想成為什麼樣的人。</p></div>
-      <div class="value-card"><span>02</span><h3>學習</h3><p>持續精進能力與知識。</p></div>
-      <div class="value-card"><span>03</span><h3>自律</h3><p>把想法轉化成每天的行動。</p></div>
-      <div class="value-card"><span>04</span><h3>成長</h3><p>成為比昨天更好的自己。</p></div>
-    </section>
-
-    <section id="lol" class="section lol-section">
-      <div class="section-heading narrow">
-        <p class="eyebrow">Letter of Life</p>
-        <h2>什麼是 LOL 生命契約？</h2>
-        <p>夢想很多人都有。真正困難的是持續行動。LOL 是一套幫助你將目標轉化成具體行動的方法。</p>
+    <section class="section compass" id="compass">
+      <div class="section-heading reveal">
+        <p class="eyebrow">GROWTH COMPASS</p>
+        <h2>你目前的大學成長階段在哪裡？</h2>
+        <p>這是一個趣味探索工具，用 1 分鐘看看你現在比較接近哪一種成長狀態。</p>
       </div>
-      <div class="timeline">
-        <div class="timeline-item"><span>1</span><h3>設定目標</h3><p>釐清你真正想完成的事。</p></div>
-        <div class="timeline-item"><span>2</span><h3>具體計畫</h3><p>把方向拆成可執行的步驟。</p></div>
-        <div class="timeline-item"><span>3</span><h3>開始行動</h3><p>用固定節奏練習自律。</p></div>
-        <div class="timeline-item"><span>4</span><h3>檢核調整</h3><p>看見成果，也修正下一步。</p></div>
-      </div>
-    </section>
-
-    <section id="courses" class="section courses-section">
-      <div class="section-heading">
-        <p class="eyebrow">Courses & Activities</p>
-        <h2>那些讓人開始改變的課程</h2>
-      </div>
-      <div class="course-grid">
-        <article><h3>企圖心課程</h3><p>找回想前進的理由，讓目標有真正的拉力。</p></article>
-        <article><h3>學習八法</h3><p>建立有效學習方法，讓努力不再只是硬撐。</p></article>
-        <article><h3>時間管理</h3><p>練習分配時間與能量，讓生活更有掌控感。</p></article>
-        <article><h3>溝通領導</h3><p>在團隊中練習表達、協調與承擔。</p></article>
+      <div class="quiz reveal">
+        <div class="quiz-progress"><span id="quizStep">1</span>/5</div>
+        <h3 id="quizQuestion">我目前有清楚想努力的方向。</h3>
+        <div class="quiz-options">
+          <button data-score="1">還在摸索</button>
+          <button data-score="2">有一點想法</button>
+          <button data-score="3">蠻清楚的</button>
+          <button data-score="4">非常明確</button>
+        </div>
+        <div class="quiz-result" id="quizResult" hidden></div>
+        <button class="btn btn-primary quiz-reset" id="quizReset" hidden>重新測一次</button>
       </div>
     </section>
 
-    <section class="section stories-section">
-      <div class="story-panel">
-        <p class="eyebrow">Member Story</p>
-        <h2>他們曾經也只是想變好。</h2>
-        <p>有人一開始不知道未來要做什麼，有人想改善讀書習慣，有人想找到能一起努力的夥伴。加入揚生青年後，他們開始寫下目標、練習行動，也在一次次檢核中，看見自己正在改變。</p>
+    <section class="section lol" id="lol">
+      <div class="section-heading reveal">
+        <p class="eyebrow">LETTER OF LIFE</p>
+        <h2>把夢想變成行動。</h2>
+        <p>LOL 生命契約不是漂亮口號，而是一套讓目標被看見、被執行、被檢核的成長系統。</p>
+      </div>
+      <div class="timeline reveal">
+        <button class="step active" data-detail="把模糊的期待說清楚，先承認自己真正想要的是什麼。">夢想</button>
+        <button class="step" data-detail="將方向轉成可以被檢查的目標，讓努力不再只是感覺。">目標</button>
+        <button class="step" data-detail="拆成具體行動、時間安排與資源盤點，讓開始變得容易。">計畫</button>
+        <button class="step" data-detail="用每週行動累積改變，從小步驟開始建立自律。">執行</button>
+        <button class="step" data-detail="定期回顧成果與困難，調整策略，而不是放棄。">檢核</button>
+        <button class="step" data-detail="把一次次行動沉澱成能力，成為更穩定、更清楚的自己。">成長</button>
+      </div>
+      <p class="timeline-detail reveal" id="timelineDetail">把模糊的期待說清楚，先承認自己真正想要的是什麼。</p>
+    </section>
+
+    <section class="section courses" id="courses">
+      <div class="section-heading reveal">
+        <p class="eyebrow">COURSE FINDER</p>
+        <h2>你現在最想改善什麼？</h2>
+        <p>點選你的狀態，看看 YoungSun 可以從哪裡陪你開始。</p>
+      </div>
+      <div class="course-picker reveal">
+        <button data-course="學習八法｜幫你整理讀書方法，建立更有效率的學習策略。">📚 學習效率</button>
+        <button data-course="時間管理工作坊｜練習安排時間、能量與待辦事項。">⏰ 時間管理</button>
+        <button data-course="企圖心課程｜重新連結你想變好的理由與方向。">🎯 目標設定</button>
+        <button data-course="溝通領導課｜練習表達、協調與團隊合作。">🤝 溝通能力</button>
+        <button data-course="LOL生命契約｜把自律變成可以被執行與檢核的計畫。">💪 自律習慣</button>
+      </div>
+      <div class="course-result reveal" id="courseResult">選一個你想改善的方向，這裡會出現推薦課程。</div>
+    </section>
+
+    <section class="section stories" id="stories">
+      <div class="section-heading reveal">
+        <p class="eyebrow">STORIES</p>
+        <h2>他們曾經也和你一樣。</h2>
+        <p>先用示意故事呈現，未來可以換成真實社員心得與照片。</p>
+      </div>
+      <div class="story-grid">
+        <article class="flip-card reveal"><div class="flip-inner"><div class="flip-front"><h3>探索中的新生</h3><p>點我翻面</p></div><div class="flip-back"><h3>加入後</h3><p>透過 LOL 釐清目標，開始建立每週固定學習節奏。</p></div></div></article>
+        <article class="flip-card reveal"><div class="flip-inner"><div class="flip-front"><h3>容易拖延的學生</h3><p>點我翻面</p></div><div class="flip-back"><h3>加入後</h3><p>找到夥伴一起檢核，讓計畫不再只停在紙上。</p></div></div></article>
+        <article class="flip-card reveal"><div class="flip-inner"><div class="flip-front"><h3>想挑戰自己的幹部</h3><p>點我翻面</p></div><div class="flip-back"><h3>加入後</h3><p>從參與者變成帶領者，練習溝通、企劃與承擔。</p></div></div></article>
       </div>
     </section>
 
-    <section id="join" class="section join-section">
-      <div>
-        <p class="eyebrow">Join Us</p>
-        <h2>你不需要一開始就很厲害，只需要願意開始。</h2>
-        <p>如果你正在尋找一個可以陪你讀書、成長、練習自律、探索未來的環境，揚生青年歡迎你。</p>
-      </div>
-      <div class="join-actions">
-        <a class="btn primary" href="https://www.instagram.com/" target="_blank" rel="noopener">追蹤 Instagram</a>
-        <a class="btn secondary dark" href="mailto:example@example.com">聯絡我們</a>
+    <section class="join" id="join">
+      <div class="join-card reveal">
+        <p class="eyebrow">JOIN US</p>
+        <h2>下一個改變的人，可能就是你。</h2>
+        <p>你不需要一開始就很厲害，只需要願意開始。YoungSun 會陪你把想變好的念頭，慢慢變成真的。</p>
+        <div class="hero-actions">
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="btn btn-primary">追蹤 Instagram</a>
+          <a href="#top" class="btn btn-glass">回到首頁</a>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <p>© 2026 揚生青年 Youngsun Youth. All rights reserved.</p>
+    <p>YoungSun｜揚生青年翻轉自學小組</p>
+    <p>自律・學習・目標・成長</p>
   </footer>
 
   <script src="script.js"></script>
