@@ -1,1 +1,94 @@
-<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>YoungSun Admin</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&family=Noto+Sans+TC:wght@400;700;900&display=swap" rel="stylesheet"><link rel="stylesheet" href="admin.css"></head><body><div class="wrap"><div class="top"><div class="brand"><h1>YOUNGSUN ADMIN</h1><p>揚生青年翻轉自學小組｜網站內容管理</p></div><a href="../index.html">回到網站</a></div><section id="login" class="login"><h2>登入後台</h2><p>第一版是簡易門禁。真正發布到 GitHub 時，會另外要求你輸入 GitHub Token。</p><label>帳號</label><input id="user" placeholder="admin"><br><br><label>密碼</label><input id="pass" type="password" placeholder="youngsun"><div class="actions"><button class="btn" id="loginBtn">登入</button></div><p class="status" id="loginStatus"></p></section><section id="admin" class="hidden"><div class="hint">重要：請不要把 GitHub Token 貼給任何人。Token 只會存在你的瀏覽器 localStorage，不會寫進網站檔案。</div><div class="grid"><aside class="side" id="fileTabs"></aside><main class="panel"><h2 id="editorTitle">內容管理</h2><label>GitHub Token（發布時需要）</label><input id="token" type="password" placeholder="ghp_xxx"><div class="actions"><button class="btn secondary" id="saveToken">儲存 Token 到本機</button><button class="btn secondary" id="clearToken">清除 Token</button></div><br><label>JSON 內容</label><textarea id="editor"></textarea><div class="actions"><button class="btn" id="formatBtn">格式化 JSON</button><button class="btn secondary" id="downloadBtn">下載目前 JSON</button><button class="btn" id="publishBtn">發布到 GitHub</button></div><p class="status" id="status"></p></main></div></section></div><script src="admin.js"></script></body></html>
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>YoungSun｜揚生青年翻轉自學小組</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="cursor-glow"></div>
+  <nav class="navbar">
+    <a class="brand" href="index.html"><span>YOUNGSUN</span><small>揚生青年翻轉自學小組</small></a>
+    <button class="menu-toggle" aria-label="開啟選單">☰</button>
+    <div class="nav-links">
+      <a class="active" href="index.html">首頁</a>
+      <a href="about.html">關於揚生</a>
+      <a href="lol.html">LOL生命契約</a>
+      <a href="courses.html">課程活動</a>
+      <a href="join.html">加入我們</a>
+      <a class="nav-cta" href="join.html#instagram">追蹤 IG</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero home-hero">
+      <div class="hero-bg orb-one"></div><div class="hero-bg orb-two"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">YOUNGSUN METHOD</p>
+        <h1>在大學，<br><span class="gradient-text">不只是讀書。</span></h1>
+        <p class="hero-sub">大學四年，可以很快，也可以很精彩。關鍵在於你如何選擇。</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="about.html">探索揚生</a>
+          <a class="btn ghost" href="lol.html">了解 LOL</a>
+        </div>
+      </div>
+      <div class="mosaic reveal delay">
+        <div class="photo-card photo-a"><span>課程互動</span></div>
+        <div class="photo-card photo-b"><span>成果發表</span></div>
+        <div class="photo-card photo-c"><span>小組討論</span></div>
+      </div>
+    </section>
+
+    <section class="section values">
+      <div class="section-head reveal"><p class="eyebrow">CORE VALUES</p><h2>四個讓人成長的關鍵字</h2></div>
+      <div class="grid four">
+        <article class="glass-card reveal"><b>🎯 目標</b><span>找到值得努力的方向。</span></article>
+        <article class="glass-card reveal"><b>📚 學習</b><span>培養持續精進的能力。</span></article>
+        <article class="glass-card reveal"><b>⏰ 自律</b><span>把想法變成每天的行動。</span></article>
+        <article class="glass-card reveal"><b>🌱 成長</b><span>成為比昨天更好的自己。</span></article>
+      </div>
+    </section>
+
+    <section class="section split">
+      <div class="split-text reveal">
+        <p class="eyebrow">ABOUT YOUNGSUN</p>
+        <h2>我們除了加入環境，<br>也可以創造環境。</h2>
+        <p>YoungSun 是一個陪伴大學生建立目標、自律習慣與自主學習能力的青年成長社群。透過 LOL、課程、自學小組與夥伴支持，讓成長不只停留在想法，而是落實在生活中。</p>
+        <a class="text-link" href="about.html">認識揚生 →</a>
+      </div>
+      <div class="image-panel reveal delay"><span>未來放揚生照片</span></div>
+    </section>
+
+    <section class="section dark-card reveal">
+      <p class="eyebrow">LETTER OF LIFE</p>
+      <h2>LOL｜把夢想轉化為行動</h2>
+      <p>以目標、時間、具體方法、成果、檢視點與價值，建立一套能被執行、檢核與調整的成長系統。</p>
+      <div class="mini-hex">
+        <span>目標</span><span>時間</span><span>具體方法</span><span>成果</span><span>檢視點</span><span>價值</span>
+      </div>
+      <a class="btn primary" href="lol.html">了解 LOL 生命契約</a>
+    </section>
+
+    <section class="section course-preview">
+      <div class="section-head reveal"><p class="eyebrow">COURSES</p><h2>課程活動</h2><p>每學期課程將以課程卡片呈現，並可放上課程圖片、日期、時間、講師與地點。</p></div>
+      <div class="grid three">
+        <article class="course-card reveal"><div class="course-img"></div><h3>本學期課程</h3><p>未來放課表與課程圖片。</p></article>
+        <article class="course-card reveal"><div class="course-img img2"></div><h3>自學小組</h3><p>呈現學習社群與互動照片。</p></article>
+        <article class="course-card reveal"><div class="course-img img3"></div><h3>歷年活動</h3><p>成果發表、寒假訓練、幹部訓練、聖方濟育幼院營隊。</p></article>
+      </div>
+    </section>
+
+    <section class="cta reveal">
+      <h2>下一個改變的人，可能就是你。</h2>
+      <a class="btn primary" href="join.html">加入 YoungSun</a>
+    </section>
+  </main>
+
+  <footer>YOUNGSUN｜揚生青年翻轉自學小組</footer>
+  <script src="script.js"></script>
+</body>
+</html>
